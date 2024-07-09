@@ -11,16 +11,17 @@
     </defs>
     <ellipse id="bakgrund" rx="256" ry="256" transform="translate(256 256)" fill="url(#bakgrund-fyll)" stroke-width="0"/>
     <g id="ryggrad" transform="matrix(1.25 0 0 1.25-64-64)">
-        <g id="nere">
-            <ellipse id="ben-6" rx="16.5" ry="16.5" transform="translate(250.5 415.5)" fill="url(#ben-fyll)" stroke-width="0"/>
-            <ellipse id="ben-5" rx="22" ry="22" transform="translate(278 377)" fill="url(#ben-fyll)" stroke-width="0"/>
-            <ellipse id="ben-4" rx="27.5" ry="27.5" transform="translate(283.5 316.5)" fill="url(#ben-fyll)" stroke-width="0"/>
+        <g id="uppe" transform="matrix(-1 0 0-1 512 512)">
+            <ellipse id="ben-0" rx="16.5" ry="16.5" transform="matrix(-1 0 0-1 250.5 415.5)" fill="url(#ben-fyll)" stroke-width="0"/>
+            <ellipse id="ben-1" rx="22" ry="22" transform="matrix(-1 0 0-1 278 377.8)" fill="url(#ben-fyll)" stroke-width="0"/>
+            <ellipse id="ben-2" rx="27.5" ry="27.5" transform="matrix(-1 0 0-1 283.5 316.5)" fill="url(#ben-fyll)" stroke-width="0"/>
         </g>
         <ellipse id="ben-3" rx="33" ry="33" transform="translate(256 256)" fill="url(#ben-fyll)" stroke-width="0"/>
-        <g id="uppe" transform="matrix(-1 0 0-1 394.745369 362.25676)">
-            <ellipse id="ben-2" rx="27.5" ry="27.5" transform="matrix(-1 0 0-1 160.745366 166.756759)" fill="url(#ben-fyll)" stroke-width="0"/>
-            <ellipse id="ben-1" rx="22" ry="22" transform="matrix(-1 0 0-1 155.245366 227.256759)" fill="url(#ben-fyll)" stroke-width="0"/>
-            <ellipse id="ben-0" rx="16.5" ry="16.5" transform="matrix(-1 0 0-1 127.745366 265.756759)" fill="url(#ben-fyll)" stroke-width="0"/>
+        <g id="nere">
+            <ellipse id="ben-4" rx="27.5" ry="27.5" transform="translate(283.5 316.5)" fill="url(#ben-fyll)" stroke-width="0"/>
+            <ellipse id="ben-6" rx="16.5" ry="16.5" transform="translate(250.5 415.5)" fill="url(#ben-fyll)" stroke-width="0"/>
+            <ellipse id="ben-5" rx="22" ry="22" transform="translate(278 377)" fill="url(#ben-fyll)" stroke-width="0"/>
         </g>
     </g>
 </svg>
+
