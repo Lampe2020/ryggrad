@@ -1,12 +1,12 @@
 <svg id="ryggrad-logotyp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="512" height="512">
     <defs>
         <linearGradient id="bakgrund-fyll" x1="0.082096" y1="0.774511" x2="0.917904" y2="0.225489" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
-            <stop id="bakgrund-fyll-0" offset="0%" stop-color="#ff9300"/>
-            <stop id="bakgrund-fyll-1" offset="100%" stop-color="#ffed00"/>
+            <stop id="bakgrund-fyll-0" offset="0%" stop-color="#ff9600"/>
+            <stop id="bakgrund-fyll-1" offset="100%" stop-color="#ffee00"/>
         </linearGradient>
         <linearGradient id="ben-fyll" x1="0.082096" y1="0.774511" x2="0.917904" y2="0.225489" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
-            <stop id="ben-fyll-0" offset="0%" stop-color="#00ff96"/>
-            <stop id="ben-fyll-1" offset="100%" stop-color="#96ff00"/>
+            <stop id="ben-fyll-0" offset="0%" stop-color="#96ff00"/>
+            <stop id="ben-fyll-1" offset="100%" stop-color="#00ff96"/>
         </linearGradient>
     </defs>
     <ellipse id="bakgrund" rx="256" ry="256" transform="translate(256 256)" fill="url(#bakgrund-fyll)" stroke-width="0"/>
