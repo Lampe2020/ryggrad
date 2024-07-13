@@ -1,0 +1,37 @@
+# mtPaint layers
+1
+2
+ryggrad-repopic-bg.png
+Bakgrund
+1
+0
+0
+0
+-1
+100
+ryggrad-repopic-text.png
+Text
+1
+0
+0
+1
+5
+100
+ryggrad-icon-420x420.png
+logotyp
+1
+108
+108
+0
+-1
+100
+# mtPaint animation
+1
+100
+frames
+f
+10
+0
+0
+0
+0
