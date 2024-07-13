@@ -19,8 +19,8 @@
         <ellipse id="ben-3" rx="33" ry="33" transform="translate(256 256)" fill="url(#ben-fyll)" stroke-width="0"/>
         <g id="nere">
             <ellipse id="ben-4" rx="27.5" ry="27.5" transform="translate(283.5 316.5)" fill="url(#ben-fyll)" stroke-width="0"/>
-            <ellipse id="ben-6" rx="16.5" ry="16.5" transform="translate(250.5 415.5)" fill="url(#ben-fyll)" stroke-width="0"/>
             <ellipse id="ben-5" rx="22" ry="22" transform="translate(278 377)" fill="url(#ben-fyll)" stroke-width="0"/>
+            <ellipse id="ben-6" rx="16.5" ry="16.5" transform="translate(250.5 415.5)" fill="url(#ben-fyll)" stroke-width="0"/>
         </g>
     </g>
 </svg>
