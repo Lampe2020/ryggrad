@@ -4,9 +4,17 @@
 ryggrad HTML parser
 """
 
-import typing
+import re, typing
 
-class HTMLElement:
+class DOMTree:
+    """
+    The base class for all DOM elements and entire trees
+    """
+    doctype:str = 'html'
+    doctype_props:dict[str, str] = {}
+    elements:list[typing.Type[DOMTree]]
+
+class HTMLElement(DOMTree):
     """
     Base HTML element. The parser returns this if it encounters an element that it doesn't recognize.
     """
@@ -20,6 +28,7 @@ class HTMLElement:
         :param attrs:
         :param props:
         """
+        super().__init__()
         self.tagname:str = str(tagname)
         self.attrs:dict[str, str] = {**attrs}
         self.props:dict[str, any] = {**props}
@@ -47,12 +56,23 @@ class HTMLElement:
 
     #TODO: Implement the other needed methods!
 
-def parse(markup:str) -> typing.Type[HTMLElement]:
+def parse(markup:str, dynamic:bool=False, scripthandler:None|typing.Callable=None) -> DOMTree:
     """
-    Parses the given HTML and returns it as a tree of HTML element objects.
+    Parses the given HTML and returns it as a `DOMTree`.
+    Setting the `dynamic` argument to `False` means the markup parsing can be interrupted by scripts. In that case, a
+    callable object needs to be provided to the `scripthandler`, which takes the HTMLElement decendant that caused the
+    parser to kickstart script execution as the first argument (`kickstart:typing.Type[HTMLEmenent]=`) and the entire
+    so-far-parsed DOM tree as the second argument (`dom:DOMTree=`).
     :param markup:
+    :param static:
     :return:
     """
+    if static and not scripthandler:
+        raise ValueError('parsers.html.parse(): No script handler provided in non-static mode!')
+    domtree:DOMTree = DOMTree()
+    elmnt_stack:list[typing.Type[HTMLElement]] = [] # Elements are added to here when needed. If a script removes them
+                                                    # during parsing, the stack is walked back upwards until an element
+                                                    # that is still present in the DOMTree is found.
     #TODO: Implement parser logic!
     return HTMLElement(
         tagname='html-parse-error',
